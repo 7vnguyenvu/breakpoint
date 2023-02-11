@@ -1,0 +1,26 @@
+body {
+    height: 500px;
+    position: relative;
+}
+h1 {
+    margin: 50px 0;
+    text-align: center;
+    font-family: "Baloo";
+}
+.content {
+    width: 550px;
+    height: 300px;
+    background-color: rgb(255, 222, 180);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.box_father {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
