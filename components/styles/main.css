@@ -1,0 +1,12 @@
+p.link {
+    display: inline;
+    margin: 0 10px;
+    text-align: center;
+    font-size: var(--fz-m);
+    font-weight: var(--fw-l);
+}
+
+p.link:hover {
+    color: aqua;
+    cursor: pointer;
+}
