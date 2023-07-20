@@ -1,9 +1,6 @@
 p.link {
-    display: inline;
-    margin: 0 10px;
-    text-align: center;
     font-size: var(--fz-m);
-    font-weight: var(--fw-l);
+    font-weight: var(--fw-n);
 }
 
 p.link:hover {

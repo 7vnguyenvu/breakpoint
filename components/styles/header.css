@@ -1,19 +1,25 @@
-header {
-    background-color: blueviolet;
-}
-
 header .wrapper {
-    background-color: aquamarine;
-    width: 1200px;
-    margin: 0 auto;
     padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-header h1.title {
-    text-align: center;
+header .title p {
     font-size: var(--fz-vl);
     font-weight: var(--fw-b);
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+header .title::after {
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: var(--text-w);
+    border-bottom: 2px solid var(--primary-cl);
+}
+
+header p.describe {
+    color: var(--text-w);
+    font-size: var(--fz-m);
+    font-weight: var(--fw-l);
+    text-transform: uppercase;
 }

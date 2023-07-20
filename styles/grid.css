@@ -1,0 +1,117 @@
+.wrapper {
+    max-width: var(--wrapper-width);
+    margin: 0 auto;
+}
+
+/* row */
+.scr-row {
+    /* background-color: #ccc; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--grid-gap);
+    /* width: calc(100% + var(--grid-gap)); */
+    /* margin: 0 calc((var(--grid-gap) / 2) * -1); */
+}
+
+.scr-row.l-i-left {
+    justify-content: start;
+}
+
+.scr-row.l-i-right {
+    justify-content: end;
+}
+
+.scr-row.l-i-center {
+    justify-content: center;
+}
+
+.scr-row.l-i-evenly {
+    justify-content: space-evenly;
+}
+
+.scr-row.l-i-justify {
+    justify-content: space-between;
+}
+
+/* col */
+.scr-col {
+    /* background-color: #838383; */
+    /* margin: 0 calc(var(--grid-gap) / 2); */
+    display: flex;
+    flex-direction: column;
+}
+
+.scr-col.l-i-left {
+    align-items: start;
+}
+
+.scr-col.l-i-right {
+    align-items: end;
+}
+
+.scr-col.l-i-center {
+    align-items: center;
+}
+
+/* .scr-col.l-i-evenly {
+    align-items: space-evenly;
+}
+
+.scr-col.l-i-justify {
+    align-items: space-between;
+} */
+
+.scr-col-l-1 {
+    width: calc(var(--col-1) * 1);
+}
+
+.scr-col-l-2 {
+    width: calc((var(--col-1) * 2) + (var(--grid-gap) * 1));
+}
+
+.scr-col-l-3 {
+    width: calc((var(--col-1) * 3) + (var(--grid-gap) * 2));
+}
+
+.scr-col-l-4 {
+    width: calc((var(--col-1) * 4) + (var(--grid-gap) * 3));
+}
+
+.scr-col-l-5 {
+    width: calc((var(--col-1) * 5) + (var(--grid-gap) * 4));
+}
+
+.scr-col-l-6 {
+    width: calc((var(--col-1) * 6) + (var(--grid-gap) * 5));
+}
+
+.scr-col-l-7 {
+    width: calc((var(--col-1) * 7) + (var(--grid-gap) * 6));
+}
+
+.scr-col-l-8 {
+    width: calc((var(--col-1) * 8) + (var(--grid-gap) * 7));
+}
+
+.scr-col-l-9 {
+    width: calc((var(--col-1) * 9) + (var(--grid-gap) * 8));
+}
+
+.scr-col-l-10 {
+    width: calc((var(--col-1) * 10) + (var(--grid-gap) * 9));
+}
+
+.scr-col-l-11 {
+    width: calc((var(--col-1) * 11) + (var(--grid-gap) * 10));
+}
+
+.scr-col-l-12 {
+    width: calc((var(--col-1) * 12) + (var(--grid-gap) * 11));
+}
+
+@media screen and (max-width: 900px) {
+    .scr-col-l-4 {
+        background-color: bisque;
+    }
+}

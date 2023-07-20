@@ -7,20 +7,45 @@
 }
 
 :root {
+    /* COLOR */
+    --selection-bg: #ff0077;
+    --selection-cl: #f7f7f7;
+
+    --primary-cl: #ff7700;
+
+    --text-b: #070707;
+    --text-w: #f7f7f7;
+
+    /* TMP -> DELETE */
+    --header-bgco: #70d7ff;
+    --main-bgco: #f7f7f7;
+    --footer-bgco: #7b70ff;
+    --wrapper-bgco: #7fa7ff;
+
     --font: "Baloo 2", cursive;
 
     --fz-s: 12px;
-    --fz-m: 20px;
-    --fz-l: 32px;
+    --fz-m: calc(var(--fz-s) + 4px);
+    --fz-l: calc(var(--fz-m) + 8px);
     --fz-vl: 52px;
 
     --fw-l: 400;
     --fw-n: 600;
     --fw-b: 800;
+
+    /* --wrapper-width: calc(100% - 200px); */
+    --wrapper-width: 1200px;
+    --grid-gap: 12px;
+    --col-1: calc((var(--wrapper-width) - (var(--grid-gap) * 11)) / 12);
 }
 
 html {
     width: 100vw;
+}
+
+::selection {
+    background-color: var(--selection-bg);
+    color: var(--selection-cl);
 }
 
 body {
@@ -33,4 +58,85 @@ body {
 #app {
     width: 100%;
     background-color: azure;
+}
+
+header {
+    background-color: var(--header-bgco);
+}
+
+main {
+    /* background-color: var(--main-bgco); */
+}
+
+footer {
+    background-color: var(--footer-bgco);
+}
+
+___ .wrapper {
+    background-color: var(--wrapper-bgco);
+}
+
+primary {
+    color: var(--primary-cl);
+}
+
+@media screen and (max-width: 1200px) {
+    :root {
+        --fz-s: 12px;
+        --fz-m: 20px;
+        --fz-l: 32px;
+        --fz-vl: 52px;
+
+        --wrapper-width: 1024px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    :root {
+        --fz-s: 8px;
+        --fz-m: 12px;
+        --fz-l: 20px;
+        --fz-vl: 36px;
+
+        --wrapper-width: 912px;
+    }
+}
+@media screen and (max-width: 912px) {
+    :root {
+        --fz-s: 8px;
+        --fz-m: 12px;
+        --fz-l: 20px;
+        --fz-vl: 36px;
+
+        --wrapper-width: 768px;
+    }
+}
+@media screen and (max-width: 768px) {
+    :root {
+        --fz-s: 6px;
+        --fz-m: 10px;
+        --fz-l: 16px;
+        --fz-vl: 32px;
+
+        --wrapper-width: 700px;
+    }
+}
+@media screen and (max-width: 700px) {
+    :root {
+        --fz-s: 6px;
+        --fz-m: 10px;
+        --fz-l: 16px;
+        --fz-vl: 32px;
+
+        --wrapper-width: 480px;
+    }
+}
+@media screen and (max-width: 480px) {
+    :root {
+        --fz-s: 6px;
+        --fz-m: 10px;
+        --fz-l: 16px;
+        --fz-vl: 32px;
+
+        --wrapper-width: 100%;
+    }
 }
