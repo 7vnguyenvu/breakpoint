@@ -1,0 +1,9 @@
+footer .wrapper {
+    padding: var(--wrapper-padding) 0;
+}
+
+footer .copyright {
+    font-size: var(--fz-m);
+    font-weight: var(--fw-n);
+    line-height: 1.2;
+}

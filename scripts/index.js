@@ -1,5 +1,5 @@
-import DOM_config from "../configs/dom.config.js";
-import Layout from "../layouts/index.js";
+import DOM_config from "/configs/dom.config.js";
+import Layout from "/layouts/index.js";
 
 // SET FAVICON => <link rel="shortcut icon" href="/images/target.png" type="image/x-icon" />
 var link_favicon = document.createElement("link");
@@ -15,7 +15,7 @@ link_css.href = DOM_config.css;
 document.head.appendChild(link_css);
 
 // SET TITLE
-document.title = DOM_config.title;
+document.title = undefined || DOM_config.title;
 
 // SET ELEMENTS
 document.getElementById("app").innerHTML = Layout;

@@ -1,7 +1,6 @@
 import Comps from "../components/index.js";
 
 export default `
-
     <Header>
         ${Comps.Header ? Comps.Header : ""}
     </Header>
@@ -10,8 +9,5 @@ export default `
     </Main>
     <Footer>
         ${Comps.Footer ? Comps.Footer : ""}
-    </Footer>
-
-
-    
+    </Footer>    
 `;

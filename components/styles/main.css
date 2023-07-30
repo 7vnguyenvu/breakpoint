@@ -3,6 +3,10 @@ p.link {
     font-weight: var(--fw-n);
 }
 
+p.link:nth-child(even) {
+    color: var(--primary-cl);
+}
+
 p.link:hover {
     color: aqua;
     cursor: pointer;

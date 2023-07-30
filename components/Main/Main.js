@@ -1,17 +1,11 @@
+import router from "/configs/routers.link.js";
+import features from "/features/index.js";
+
+var BreLink = await features.getfile(`${router.components}/comps/BreLink.html`);
+var Content = await features.getfile(`${router.components}/Main/Content.html`);
+
 export default `
-
 <div class="wrapper">
-    <div class="scr-row l-i-justify">        
-        <p class="link">320</p>
-        <p class="link">480p</p>
-        <p class="link">768p</p>
-        <p class="link">1024</p>
-        <p class="link">1280</p>
-        <p class="link">1920</p>
-    </div>
-
-
-</div>
-
-
-`;
+    ${BreLink}
+    ${Content}
+</div>`;

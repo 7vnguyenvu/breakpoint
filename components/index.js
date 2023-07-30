@@ -1,6 +1,6 @@
-import Header from "./Header/Header.js";
+import Header from "./Header/index.js";
 import Main from "./Main/Main.js";
-import Footer from "./Footer/Footer.js";
+import Footer from "./Footer/index.js";
 
 export default {
     Header,
