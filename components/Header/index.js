@@ -1,6 +1,6 @@
-import features from "/features/index.js";
+import getfile from "../../features/get.content.htmlfile.js";
 
-var Header = await features.getfile(`components/Header/Header.html`);
+var Header = await getfile(`components/Header/Header.html`);
 
 export default `
 <div class="wrapper">
