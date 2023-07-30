@@ -1,10 +1,9 @@
 import getfile from "../../features/get.content.htmlfile.js";
 
-var Header = await getfile(`components/Header/Header.html`);
+// var Header = await getfile(`components/Header/Header.html`);
 
 export default `
 <div class="wrapper">
-    <!-- ${Header} -->
     <div class="scr-row l-i-center mb-4">
     <div class="title scr-col l-i-center scr-col-l-4">
         <p>Break<primary>point</primary></p>
